@@ -1,7 +1,7 @@
-**Functional specification, High risk**  
+**Functional specification, Medium risk**  
 ID: #2  
 Read in auditory threshold data from USZ multiThreshold test battery into R and convert it into one dataframe  
-Change date: 2020-07-08T12:17:34Z  
+Change date: 2020-07-08T13:07:06Z  
 Creation date: 2020-07-08T11:36:50Z  
 Weblink: https://github.com/pianeu/USZ_multiThreshold_validation/issues/2  
 **Description:**  
@@ -14,10 +14,11 @@ For each select one of: 1 = low, 2 = medium, 3 = high
 Explain each selection briefly.
 **Severity**: 3; If there is an error during data reading, all downstream processes are compromised.
 **Probability**: 1; Because the xls(x) files to read are created with a matlab function through data export within the USZ multiThreshold test battery all xls(x) files should show the same basic structure. Therefore, the risk for importing problems is low. 
+**Detectability**: 2; Serious problems are likely to be detected relatively quickly during interaction with the data.
 
 **Linkage to related documents:**  
 User requirement: #1  
-Test: 
+Test: #3 
 
 
 
